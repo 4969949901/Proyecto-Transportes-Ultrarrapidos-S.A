@@ -14,5 +14,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // User::factory(10)->create();
+        $this->call(TransportistaSeeder::class);//sirve para llamar la clase TransportistaSeeder y asi se pueda ejecutar en la Base de datos sin problema,
+
     }
 }

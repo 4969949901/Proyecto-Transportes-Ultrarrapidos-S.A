@@ -3,7 +3,7 @@
 namespace Database\Factories;
 use App\Models\Transportista;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
+
 
 class TransportistaFactory extends Factory
 {
@@ -14,7 +14,7 @@ class TransportistaFactory extends Factory
      */
 
 
-    protected $model1 = Transportista::class;
+    protected $transportista = Transportista::class;
     public function definition()
     {
         return [

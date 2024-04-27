@@ -16,7 +16,7 @@ class CreateEgresosTable extends Migration
         Schema::create('egresos', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_camion');
-            $table->foreign('id_camion')->references('id')->on('camiones');
+            $table->foreign('id_camion')->references('id')->on('camions');
             $table->unsignedBigInteger('id_bodega_egreso');
             $table->foreign('id_bodega_egreso')->references('id')->on('bodegas');
             $table->dateTime('fecha_hora_egreso');

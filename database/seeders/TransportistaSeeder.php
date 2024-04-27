@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-use APP\Models\Transportista;
+use App\Models\Transportista;
 use Illuminate\Database\Seeder;
 
 class TransportistaSeeder extends Seeder
@@ -14,7 +14,9 @@ class TransportistaSeeder extends Seeder
     //Seedere para llenado de pruebas en la BD.
     public function run()
     {
-        // Transportista::factory(15)->create();
+        Transportista::factory(15)->create();
+
+        /*
         $transportista=new Transportista();
 
         $transportista->nombre ='Juan Velasquez';
@@ -32,6 +34,6 @@ class TransportistaSeeder extends Seeder
         $transportista2->telefono ='44568765';
         $transportista2->correo_electronico ='Marcelo@gmail.com';
 
-        $transportista2->save();
+        $transportista2->save();*/
     }
 }

@@ -2,6 +2,7 @@
 
 @section('content')
 
+<<<<<<< HEAD:resources/views/home.blade.php
     <style>
         body {
             display-outside: ruby;
@@ -18,11 +19,13 @@
 
 
     <body>
+=======
+>>>>>>> 3ca147cae3161a8c8d8d0248f36bea43f2781824:resources/views/layouts/home.blade.php
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">{{ __('Dashboard Iniciado') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -31,7 +34,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('Inicio de Sesion Exitoso') }}
                 </div>
             </div>
         </div>

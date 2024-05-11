@@ -1,6 +1,7 @@
 @extends('layouts.app')
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 @section('content')
+<<<<<<< HEAD
     <!--se crearon estilos para el documento-->
     <style>
         .custom-card {
@@ -55,13 +56,63 @@
             <div class="col-md-8">
                 <div class="card custom-card">
                     <div class="card-header">{{ __('Register') }}</div>
+=======
+
+    <style>
+        body{
+            background-color: skyblue;
+        }
+
+        .card-body{
+            margin-left: 650px;
+            margin-top: 100px;
+            text-align: center;
+            align-content:center;
+            align-items: center;
+            justify-content: center;
+            background: navajowhite;
+            height: 350px;
+            width: 200px;
+            border-radius: 60px;
+        }
+        label{
+            color: black;
+            text-align: justify;
+            margin: 5px;
+        }
+        .btn-link{
+            color:black;
+        }
+
+        .form-control{
+            border-radius: 20px;
+        }
+
+    </style>
+
+
+
+    <body>
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">{{ __('') }}</div>
+>>>>>>> 3ca147cae3161a8c8d8d0248f36bea43f2781824
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
 
+<<<<<<< HEAD
                             <div class="mb-3 row">
                                 <label for="name" class="col-md-4 col-form-label form-label text-md-end">{{ __('Name') }}</label>
+=======
+                            <div class="row mb-3">
+                                <p>Registro</p>
+                                <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+>>>>>>> 3ca147cae3161a8c8d8d0248f36bea43f2781824
 
                                 <div class="col-md-6">
                                     <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -74,8 +125,13 @@
                                 </div>
                             </div>
 
+<<<<<<< HEAD
                             <div class="mb-3 row">
                                 <label for="email" class="col-md-4 col-form-label form-label text-md-end">{{ __('Email Address') }}</label>
+=======
+                            <div class="row mb-3">
+                                <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+>>>>>>> 3ca147cae3161a8c8d8d0248f36bea43f2781824
 
                                 <div class="col-md-6">
                                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
@@ -88,8 +144,13 @@
                                 </div>
                             </div>
 
+<<<<<<< HEAD
                             <div class="mb-3 row">
                                 <label for="password" class="col-md-4 col-form-label form-label text-md-end">{{ __('Password') }}</label>
+=======
+                            <div class="row mb-3">
+                                <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+>>>>>>> 3ca147cae3161a8c8d8d0248f36bea43f2781824
 
                                 <div class="col-md-6">
                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
@@ -102,17 +163,28 @@
                                 </div>
                             </div>
 
+<<<<<<< HEAD
                             <div class="mb-3 row">
                                 <label for="password-confirm" class="col-md-4 col-form-label form-label text-md-end">{{ __('Confirm Password') }}</label>
+=======
+                            <div class="row mb-3">
+                                <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
+>>>>>>> 3ca147cae3161a8c8d8d0248f36bea43f2781824
 
                                 <div class="col-md-6">
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                                 </div>
                             </div>
 
+<<<<<<< HEAD
                             <div class="mb-0 row">
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn btn-primary btn-register">
+=======
+                            <div class="row mb-0">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+>>>>>>> 3ca147cae3161a8c8d8d0248f36bea43f2781824
                                         {{ __('Register') }}
                                     </button>
                                 </div>
@@ -123,4 +195,8 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
+=======
+    </body>
+>>>>>>> 3ca147cae3161a8c8d8d0248f36bea43f2781824
 @endsection
